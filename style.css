@@ -1,0 +1,103 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/* Toolbar Styles */
+.toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    background-color: #edf2f7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tool-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tool-group label {
+    font-weight: 500;
+}
+
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+}
+/* Style the color picker swatch */
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: 2px solid #cbd5e0;
+    border-radius: 50%;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
+#brushSizeValue {
+    font-weight: 600;
+    min-width: 25px;
+    text-align: center;
+}
+
+#clearBtn {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#clearBtn:hover {
+    background-color: #c53030;
+}
+
+/* Canvas Styles */
+#drawingCanvas {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: crosshair;
+}
